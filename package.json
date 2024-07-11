@@ -2,6 +2,7 @@
   "name": "huydang-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Huy Dang",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
