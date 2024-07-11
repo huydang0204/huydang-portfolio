@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const MyName = () => {
+const TextLogo = () => {
   return (
     <Link href="/">
       <h1 className="text-4xl font-semibold">
@@ -10,4 +10,4 @@ const MyName = () => {
   );
 };
 
-export default MyName;
+export default TextLogo;

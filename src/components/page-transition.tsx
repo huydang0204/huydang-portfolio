@@ -16,7 +16,8 @@ function PageTransition(props: { children: React.ReactNode }) {
             transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
           className="h-screen w-screen fixed top-0 bg-primary pointer-events-none"
-        ></motion.div>
+        />
+        {props.children}
       </div>
     </AnimatePresence>
   );

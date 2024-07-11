@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import { NAV_LINKS } from "@/lib/data";
-import MyName from "./my-name";
+import TextLogo from "./text-logo";
 
 function MobileNav() {
   const pathname = usePathname();
@@ -17,7 +17,7 @@ function MobileNav() {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="mt-32 mb-40 text-center text-2xl">
-          <MyName />
+          <TextLogo />
         </div>
         <nav className="flex flex-col justify-center items-center gap-8">
           {NAV_LINKS.map((link, index) => {
