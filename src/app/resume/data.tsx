@@ -1,20 +1,7 @@
 import { JSX } from "react";
-import {
-  FaHtml5,
-  FaSass,
-  FaReact,
-  FaNodeJs,
-  FaJava,
-  FaTs,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
 
-import {
-  SiTailwindcss,
-  SiBootstrap,
-  SiNextdotjs,
-  SiExpress,
-  SiNestjs,
-} from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 
 type BaseInformationFields<T> = {
   icon?: string;
@@ -108,15 +95,15 @@ type SkillItems = {
   name: string;
 };
 const SKILLS: BaseInformationFields<SkillItems> = {
-  title: "My skills",
+  title: "My Skills",
   items: [
     {
       icon: <FaHtml5 />,
       name: "HTML/HTML5",
     },
     {
-      icon: <FaSass />,
-      name: "CSS/SASS",
+      icon: <FaCss3 />,
+      name: "CSS/SCSS",
     },
     {
       icon: <FaReact />,
