@@ -4,10 +4,6 @@ const NAV_LINKS = [
     path: "/",
   },
   {
-    name: "services",
-    path: "/services",
-  },
-  {
     name: "resume",
     path: "/resume",
   },
@@ -17,7 +13,7 @@ const NAV_LINKS = [
   },
   {
     name: "contact",
-    path: "/contacts",
+    path: "/contact",
   },
 ];
 
