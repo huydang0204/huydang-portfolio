@@ -2,7 +2,7 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
-import { ABOUT, EDUCATION, EXPERIENCE, SKILLS } from "./data";
+import { ABOUT, CERTIFICATIONS, EXPERIENCE, SKILLS } from "./data";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { InfoTitle } from "./components";
 import {
@@ -34,7 +34,7 @@ function Resume() {
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="certificate">Certifications</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
@@ -46,11 +46,11 @@ function Resume() {
                     return (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="text-center bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                       >
                         <h3 className="text-xl text-accent">{item.company}</h3>
                         <span className="text-white/70">{item.duration}</span>
-                        <h4 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">
+                        <h4 className="text-lg max-w-[260px] text-center lg:text-left">
                           {item.position}
                         </h4>
                       </li>
@@ -61,39 +61,41 @@ function Resume() {
             </TabsContent>
             <TabsContent value="skills" className="w-full">
               <InfoTitle title={SKILLS.title} />
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                {SKILLS.items.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                              {item.icon}
-                            </div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{item.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  );
-                })}
-              </ul>
+              <ScrollArea className="h-full xl:h-[50vh]">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                  {SKILLS.items.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {item.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{item.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </ScrollArea>
             </TabsContent>
-            <TabsContent value="education" className="w-full">
-              <InfoTitle title={EDUCATION.title} />
+            <TabsContent value="certificate" className="w-full">
+              <InfoTitle title={CERTIFICATIONS.title} />
               <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                {EDUCATION.items.map((item, index) => {
+                {CERTIFICATIONS.items.map((item, index) => {
                   return (
                     <li
                       key={index}
-                      className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                      className="text-center bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                     >
                       <h3 className="text-xl text-accent">{item.degree}</h3>
                       <span className="text-white/70">{item.duration}</span>
-                      <h4 className="text-lg max-w-[260px] min-h-[60px] text-center lg:text-left">
+                      <h4 className="text-lg max-w-[260px]\ text-center lg:text-left">
                         {item.institution}
                       </h4>
                     </li>
