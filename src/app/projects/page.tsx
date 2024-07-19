@@ -36,7 +36,7 @@ function Projects() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 2, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12"
     >
@@ -52,9 +52,11 @@ function Projects() {
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.name}
               </h2>
-              <div className="text-sm text-white/30">
-                Worked at {project.company}
-              </div>
+              {project.company && (
+                <div className="text-sm text-white/30">
+                  Worked at {project.company}
+                </div>
+              )}
               {/* prj description */}
               <p className="text-white/60">{project.description}</p>
               {/* prj stacks */}
@@ -140,6 +142,7 @@ function Projects() {
                 xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 buttonStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] 
                 w-[44px] h-[44px] flex justify-center items-center transition-all"
+                lastIndex={PROJECTS.length - 1}
               />
             </Swiper>
           </div>
