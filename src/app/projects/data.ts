@@ -42,6 +42,26 @@ export const PROJECTS: ProjectInfo[] = [
   },
   {
     num: "03",
+    name: "ShineYup Multi Platform",
+    description:
+      "ShineYup Multi Platform is a all-in-one platform that provides utilize tools for everyone, from students to professionals, for basic usage to advanced usage.",
+    stack: [
+      "Typescript",
+      "Next.js",
+      "Tailwind CSS",
+      "React",
+      "Bootstrap",
+      "Express.js",
+      "NestJS",
+      "and more incoming...",
+    ],
+    company: "After work, to learn and contribute",
+    image: "/assets/projects/shineyup.png",
+    github: "https://github.com/longnguyentpvt/shineyup-multi-platform",
+    live: "https://www.shineyup.com/demo/tailwind-config-builder",
+  },
+  {
+    num: "04",
     name: "My Portfolio",
     description:
       "Yeah, exactly what you are seeing right now. A portfolio website built with Next.js, Tailwind CSS, and Framer Motion.",

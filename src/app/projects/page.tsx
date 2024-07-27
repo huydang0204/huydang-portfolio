@@ -53,9 +53,7 @@ function Projects() {
                 {project.name}
               </h2>
               {project.company && (
-                <div className="text-sm text-white/30">
-                  Worked at {project.company}
-                </div>
+                <div className="text-sm text-white/30">{project.company}</div>
               )}
               {/* prj description */}
               <p className="text-white/60">{project.description}</p>
