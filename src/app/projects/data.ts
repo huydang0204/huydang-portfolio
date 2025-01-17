@@ -42,6 +42,24 @@ export const PROJECTS: ProjectInfo[] = [
   },
   {
     num: "03",
+    name: "ThingDash",
+    description:
+      "ThingDash provides solutions to transform MQTT data, from filtering, storing, exporting, etc.. without coding.",
+    stack: [
+      "Typescript",
+      "Next.js",
+      "NestJS",
+      "Express.js",
+      "MQTT",
+      "Socket.io",
+    ],
+    image: "/assets/projects/thingdash.png",
+    live: "https://www.thingdash.io",
+    github: "",
+    company: "Freelance Projects",
+  },
+  {
+    num: "04",
     name: "ShineYup Multi Platform",
     description:
       "ShineYup Multi Platform is a all-in-one platform that provides utilize tools for everyone, from students to professionals, for basic usage to advanced usage.",
@@ -61,7 +79,7 @@ export const PROJECTS: ProjectInfo[] = [
     live: "https://www.shineyup.com/demo/tailwind-config-builder",
   },
   {
-    num: "04",
+    num: "05",
     name: "My Portfolio",
     description:
       "Yeah, exactly what you are seeing right now. A portfolio website built with Next.js, Tailwind CSS, and Framer Motion.",

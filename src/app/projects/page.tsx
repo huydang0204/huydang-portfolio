@@ -127,7 +127,7 @@ function Projects() {
                           src={project.image}
                           alt={project.name}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                         />
                       </div>
                     </div>
