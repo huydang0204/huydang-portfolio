@@ -1,9 +1,12 @@
+import { PlaywrightIcon } from "@/components/icons/playwright";
 import { JSX } from "react";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
 
 import {
-  SiAmazonaws,
+  SiAmazon,
   SiBootstrap,
+  SiC,
+  SiCplusplus,
   SiDocker,
   SiExpress,
   SiGit,
@@ -16,8 +19,8 @@ import {
   SiNestjs,
   SiNextdotjs,
   SiOracle,
-  SiPlaywright,
   SiPostgresql,
+  SiSocketdotio,
   SiSpringboot,
   SiTailwindcss,
   SiTypescript,
@@ -46,7 +49,7 @@ const ABOUT: BaseInformationFields<AboutItems> = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "5+",
+      fieldValue: "6+ Years",
     },
     {
       fieldName: "Nationality",
@@ -74,16 +77,22 @@ const EXPERIENCE: BaseInformationFields<ExperienceItems> = {
   title: "My Experience",
   items: [
     {
-      position: "Software Engineer",
+      position: "Senior Software Engineer",
       company: "Renesas Design Vietnam",
-      duration: "01/2019-01/2021, 08/2023-Now",
-      description: "Onsite",
+      duration: "08/2023 - Present",
+      description: "Full-stack development on QuickConnect Studio platform",
     },
     {
       position: "Full-stack Developer",
-      company: "Viatick PTE Singapore",
+      company: "Viatick PTE LTD Singapore",
       duration: "01/2021 - 08/2023",
-      description: "Remote",
+      description: "Remote - IoT solutions and enterprise applications",
+    },
+    {
+      position: "Software Engineer",
+      company: "Renesas Design Vietnam",
+      duration: "01/2019 - 01/2021",
+      description: "Embedded software and tooling development",
     },
   ],
 };
@@ -95,22 +104,22 @@ type CertificationsItems = {
 };
 const CERTIFICATIONS: BaseInformationFields<CertificationsItems> = {
   icon: "",
-  title: "My Certifications",
+  title: "Education & Certifications",
   items: [
     {
-      degree: "ELECTRONICS & TELECOMMUNICATION ENGINEERING",
-      institution: "Bach Khoa University",
+      degree: "B.Eng. Electronics & Telecommunication Engineering",
+      institution: "Ho Chi Minh City University of Technology (Bach Khoa University)",
       duration: "2015 - 2019",
     },
     {
-      degree: "TOEIC Certificate  issued by IIG Vietnam",
-      institution: "Score 945",
-      duration: "11/2019",
+      degree: "Oracle Cloud Infrastructure Certified Architect Associate",
+      institution: "Oracle",
+      duration: "2022",
     },
     {
-      degree: "Oracle Cloud Infrastructure Certified Architect Associate",
-      institution: "",
-      duration: "2022",
+      degree: "TOEIC Certificate - Score 935/990",
+      institution: "IIG Vietnam",
+      duration: "11/2024",
     },
   ],
 };
@@ -133,6 +142,18 @@ const SKILLS: BaseInformationFields<SkillItems> = {
     {
       icon: <FaJava />,
       name: "Java",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiC />,
+      name: "C",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "C++",
     },
     {
       icon: <FaNodeJs />,
@@ -179,6 +200,10 @@ const SKILLS: BaseInformationFields<SkillItems> = {
       name: "Next.js",
     },
     {
+      icon: <SiSocketdotio />,
+      name: "Socket.io",
+    },
+    {
       icon: <SiBootstrap />,
       name: "Bootstrap",
     },
@@ -191,11 +216,11 @@ const SKILLS: BaseInformationFields<SkillItems> = {
       name: "Jest",
     },
     {
-      icon: <SiPlaywright />,
+      icon: <PlaywrightIcon />,
       name: "Playwright",
     },
     {
-      icon: <SiAmazonaws />,
+      icon: <SiAmazon />,
       name: "AWS",
     },
     {

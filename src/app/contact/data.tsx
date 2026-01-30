@@ -20,7 +20,7 @@ const CONTACT_INFO: ContactInfo[] = [
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Email",
+    title: "Location",
     description: "Ho Chi Minh City, Vietnam",
   },
 ];
