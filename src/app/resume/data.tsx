@@ -1,6 +1,13 @@
 import { PlaywrightIcon } from "@/components/icons/playwright";
 import { JSX } from "react";
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaNodeJs,
+  FaJava,
+  FaPython,
+} from "react-icons/fa";
 
 import {
   SiAmazon,
@@ -108,7 +115,8 @@ const CERTIFICATIONS: BaseInformationFields<CertificationsItems> = {
   items: [
     {
       degree: "B.Eng. Electronics & Telecommunication Engineering",
-      institution: "Ho Chi Minh City University of Technology (Bach Khoa University)",
+      institution:
+        "Ho Chi Minh City University of Technology (Bach Khoa University)",
       duration: "2015 - 2019",
     },
     {

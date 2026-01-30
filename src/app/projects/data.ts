@@ -15,7 +15,15 @@ export const PROJECTS: ProjectInfo[] = [
     name: "QuickConnect Studio",
     description:
       "A cloud-based IDE for embedded systems development, enabling engineers to visually design IoT solutions through drag-and-drop hardware blocks. Built on Eclipse Theia framework, it features real-time code generation, integrated debugging, and seamless deployment to Renesas microcontrollers. Reduces development time from weeks to minutes.",
-    stack: ["Eclipse Theia", "TypeScript", "React", "NestJS", "Node.js", "WebSocket", "Docker"],
+    stack: [
+      "Eclipse Theia",
+      "TypeScript",
+      "React",
+      "NestJS",
+      "Node.js",
+      "WebSocket",
+      "Docker",
+    ],
     image: "/assets/projects/quick-connect-studio.jpeg",
     live: "https://www.renesas.com/us/en/software-tool/quickconnect-studio",
     github: "",
@@ -86,7 +94,13 @@ export const PROJECTS: ProjectInfo[] = [
     name: "Personal Portfolio",
     description:
       "Modern portfolio website showcasing projects and experience. Features smooth page transitions with Framer Motion, responsive design, interactive project carousel, and optimized performance. Built with Next.js 14 App Router and deployed on Vercel.",
-    stack: ["TypeScript", "Next.js 14", "Tailwind CSS", "Framer Motion", "Radix UI"],
+    stack: [
+      "TypeScript",
+      "Next.js 14",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Radix UI",
+    ],
     image: "/assets/projects/huydang-portfolio.png",
     github: "https://github.com/huydang0204/huydang-portfolio",
     live: "https://huydang-portfolio.vercel.app",
